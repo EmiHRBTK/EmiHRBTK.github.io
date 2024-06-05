@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaeKwon-Do Cielo Azul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="extension.js">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="./fotos/logo.png" alt="logo">
+        </div>
+        <div class="título">
+            <p>TAEKWON-DO</p>
+        </div>
+    </header>
+    <nav class="botones">
+        <button class="Formas">
+            <a href="file:///C:/Users/PaisGamer/Documents/TKD/formas.html" style="text-decoration: none; color: black; font-size: 20px">FORMAS</a>
+        </button>
+        <button class="Lucha">
+            <a href="file:///C:/Users/PaisGamer/Documents/TKD/Lucha.html" style="text-decoration: none; color: black; font-size: 20px">SPARRING</a>
+        </button>
+        <button class="técnicas">
+            <a href="file:///C:/Users/PaisGamer/Documents/TKD/Técnicas.html" style="text-decoration: none; color: black; font-size: 20px;">TÉCNICAS</a>
+        </button>
+    </nav>
+    <div class="cat" style="padding: 10 15 5 15;"><h3>NAVEGACIÓN</h3></div>
+    <header class="tex" style="padding: 5px 20px 5px 20px; background-color: white;flex-direction:row;justify-content: space-between;">
+           <button onclick="desplazarA('DEF')" class="botones" style="background-color: rgb(184, 184, 184); display: flex;flex-direction: row;justify-content: space-between;border-bottom: 2px solid black;margin-top: 0;;">DEFINICIÓN</button>
+           <button onclick="desplazarA('PRIN')" style="background-color: rgb(184, 184, 184); display: flex;flex-direction: row;justify-content: space-between;border-bottom: 2px solid black;margin-top: 0;;">PRINCIPIOS</button>
+           <button onclick="desplazarA('HIS')" style="background-color: rgb(184, 184, 184); display: flex;flex-direction: row;justify-content: space-between;border-bottom: 2px solid black;margin-top: 0;;">HISTORIA</button>
+           <button onclick="desplazarA('CAT')" style="background-color: rgb(184, 184, 184); display: flex;flex-direction: row;justify-content: space-between;border-bottom: 2px solid black;margin-top: 0;;">CATEGORIAS</button>   
+           <button onclick="desplazarA('DEB')" style="background-color: rgb(184, 184, 184); display: flex;flex-direction: row;justify-content: space-between;border-bottom: 2px solid black;margin-top: 0;;">DEBERES</button>
+        </header>
+    <div class="cat"><h3 id="DEF">DEFINICIÓN</h3></div>
+    <div class="tex">
+        <p>Se puede definir al arte marcial como el uso científico del cuerpo en el método de la autodefensa, la cual con su disciplina, técnica y entrenamiento mental buscan ser las bases de un fuerte sentido de justicia, la fortaleza, la humildad y la resolución.</p>
+        <h3>TAE</h3><p>-Acción de pie-</p>
+        <h3>KWON</h3><p>-Acción de mano-</p>
+        <h3>DO</h3><p>-El camino a recorrer visto de forma espiritual-</p>
+    </div> 
+    <div class="cat"><h3 id="PRIN">PRINCIPIOS</h3></div>
+    <div class="tex">
+        <h3>Cortesía</h3><p>El estudiante de TKD debe: Ser atentos con los demás, tener un sentimiento de justicia y humildad, distinguir las posiciones, respetar las cosas ajenas, comportarse con respeto observando las normas y costumbres del TKD</p>
+        <h3>Integridad</h3><p>El Estudiante debe ser capaz de distinguir entre el bien y el mal</p>
+        <h3>Perseverancia</h3><p>El estudiante debe perseverar en la busqueda de metas</p>
+        <h3>Autocontrol</h3><p>El más fuerte es aquel que gana sobre él mismo antes que sobre los demás</p>
+        <h3>Espíritu Indomable</h3><p>El estudiante debe seguir sus sueños seria y enérgicamente para alcanzar sus metas</p>
+    </div>
+    <div class="cat"><h3 id="HIS">HISTORIA</h3></div>
+        <div class="tex"><h3>FUNDADOR</h3> <p>GENERAL CHOI HONG HI: Nacido el 9 de Noviembre de 1918 en la ciudad de MIONG CHONG (Corea del Norte) fallece el 15 de Junio de 2002 en PYONG YANG (Capital de Corea del Norte) a los 84 años de edad </p>
+        <h3>Historia</h3><p>Hace más de 1300 años Corea estaba dividida en tres reinos: BAEK-JE, KOGURYO(donde se practicaba el primitivo método de lucha "SOO BAK GI") y la más pequeña, la dinastíaSILLA quienes designaron a un grupo de elite llamado HWA-RANG DO(Quienes desarrollaron varias formas de lucha con las manos y las piernas) para defenderse ante el constante acoso y las constantes invasiones de las dinastías vecinas.</p>
+    <p>Durante la ocupación japonesa (1909-1945) la práctica del SOO BAK GI como la de muchas otras artes marciales fueron prohibidas (para mantener indefensa a la población), y en un intento de defensa se comenzó a practicar secretamente el Tae-Kyon (antecesor del TaeKwon-Do), el cual buscaba aprender de cada arte marcial para utilizar el mayor potencial en cada movimiento. En 1946 el recién liberado joven llamado Choi Hong Hi comenzó a enseñar su arte marcial a sus soldados, priorizando el ataque de pies. El 11 de Abril de 1955 surge finalmente el nombre de "Tae Kwon-Do" y el 22 de Marzo de 1966 se funde la ITF (Federación Internacional de TaeKwon-Do) </p></div>
+    <div class="cat"><h3 id="CAT">CATEGORIAS</h3></div>
+    <div class="tex">
+        <h3>GUP</h3>
+        <h4 style="color: rgb(189, 189, 189);">BLANCO (X/10mo Gup)</h4> <p>Representa Inocencia y que el estudiante es inexperto y no tiene conocimientos del TaeKwon-Do</p>
+        <h4 style="color: yellow;">AMARILLO (VIII/8vo Gup)</h4> <p>Representa la tierra de la cual salen los primeros brotes de la planta que simboliza al estudiante</p>
+        <h4 style="color: green;">VERDE (VI/6to Gup)</h4><p> Representa al crecimiento tanto de la planta como del estudiante</p>
+        <h4 style="color: rgb(20, 20, 219);">AZUL (IV/4to Gup)</h4> <p>Representa al cielo, hacia donde la planta irá creciendo convirtiendose en árbol (simbólicamente como la práctica del estudiante)</p>
+        <h4 style="color: red;">ROJO (II/2do Gup)</h4> <p>Representa peligro y control, el estudiante debe cuidarse al aplicar sus (ahora peligrosas) técnicas</p>
+        <h3>DAN</h3>
+        <h4>NEGRO</h4> <p>Opuesto al blanco, simbólicamente representa la madurez y habilidad en TaeKwon-Do</p>
+        <h5 style="text-decoration: underline;">I/1er-III/3er Dan:</h5><p> Bu Sabon Nim (Ayudante de Instructor)</p>
+        <h5 style="text-decoration: underline;">IV/4to-VI/6to Dan:</h5><p>Sabon Nim (Instructor)</p>
+        <h5 style="text-decoration: underline;">VII/7mo-VIII/8vo:</h5><p>Sa Jio Nim (Maestro)</p>
+        <h5 style="text-decoration: underline;">IX/9no Dan:</h5><p>Sa Som Nim (Gran Maestro)</p>
+        <h5 style="text-decoration: underline;">Fundador del TKD</h5><p>Chang Si Ya Nim</p>
+        <p>"NIM":Forma tradicional de RESPETO</p>
+
+    </div>
+    <div class="cat"><h3 id="DEB">DEBERES DEL ESTUDIANTE</h3></div>
+    <div class="tex" style="margin-bottom: 5%;">
+        <ul>
+            <li>El estudiante nunca debe cansarse de aprender, sin importar el lugar ni el movimiento</li>
+            <li>El estudiante debe estar dispuesto a sacrificarse por su arte e instructor</li>
+            <li>Siempre se debe dar un buen ejemplo a las categorias más bajas</li>
+            <li>Siempre se debe ser leal y nunca criticar al instructor ni al TKD</li>
+            <li>Si el instructor enseña una técnica se debe practicar e intentar utilizarla</li>
+            <li>El estudiante fuera del Do-Jan refleja al arte y al instructor</li>
+            <li>Nunca traicionar al instructor</li>
+        </ul>
+    </div>
+<p>‎ </p>
+<script>
+    function desplazarA(id) {
+        var elemento = document.getElementById(id);
+        elemento.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>
